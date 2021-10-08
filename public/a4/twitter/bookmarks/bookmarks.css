@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    font-family: "Helvetica Neue";
+}
+.wd-block {
+    border: 1px solid rgb(47,51,54);
+}
+.wd-title-handle{
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-title{
+    color: white;
+    font-size:20px;
+}
+.wd-handle{
+    font-size: 13px;
+    color: lightgray;
+}
+.wd-avatar-posts{
+    padding-left: 16px;
+    padding-top: 12px;
+}
+.wd-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-name{
+    color:white;
+    font-size: 15px;
+
+}
+.wd-posts .wd-handle{
+    font-size: 15px;
+
+}
+.wd-pic{
+    float: left;
+}
+.wd-posts {
+    float: left;
+    padding-left: 12px;
+}
+.wd-float-done{
+    clear:both;
+}
+.wd-main-content{
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+}
+.wd-posts-pic{
+    width: 504px;
+    height:264px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    border-bottom: 1px solid rgb(47,51,54);
+}
+.wd-essay{
+    padding:12px;
+    font-size: 15px;
+}
+.wd-essay-title{
+    color:white;
+    font-weight: bold;
+}
+.wd-essay-text{
+    color:lightgray;
+}
+.wd-main-content .wd-block{
+    border-radius: 10px 10px 10px 10px;
+}
+.wd-icons{
+    padding-bottom: 12px;
+}
+.wd-icon{
+    float: left;
+    width: 25%;
+}
+.wd-icon a{
+    color:lightgray;
+    text-decoration: none;
+}
+.wd-icons .wd-like{
+    color:red;
+}
+.wd-icons span{
+    padding-right: 12px;
+}

@@ -1,0 +1,258 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-image2 {
+    transform: rotate(-45deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-linear2{
+    background: linear-gradient(red, dodgerblue);
+    width:200px;
+    height:200px
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial2 {
+    background: radial-gradient(greenyellow, coral);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background: radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.gradients-positioned2 {
+    background: radial-gradient(at top right, red, yellow);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+
+
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+.display-flex {
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-spacearound{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-center{
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+
+.flex-stretch>.flex-box{
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .media-screen{
+        background-color: yellow;
+        border: 1px solid black;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+        margin: 20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .media-screen {
+        background-color: blue;
+        color: white;
+        border: 1px solid black;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+        margin: 20px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .media-screen {
+        background-color: red;
+        color: white;
+        border: 1px solid black;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+        margin: 20px;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .media-screen2{
+        background-color: Cornsilk;
+        color: Maroon;
+        border: 1px black solid;
+    }
+    .media-query2{
+        background-color: Maroon;
+        color: Cornsilk;
+        margin:20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px){
+    .media-screen2{
+        background-color: Maroon;
+        color: Cornsilk;
+        border: 1px black solid;
+    }
+    .media-query2{
+        background-color: Cornsilk;
+        color: black;
+        margin:20px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .media-screen2{
+        background-color: BlanchedAlmond;
+        color:SaddleBrown;
+        border: 1px black solid;
+    }
+    .media-query2{
+        background-color: SaddleBrown;
+        color: BlanchedAlmond;
+        font-weight : bold;
+        margin:20px;
+    }
+}
+
+
