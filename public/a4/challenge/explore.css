@@ -1,12 +1,76 @@
 body {
     background-color: black;
     margin-left: 16px;
+    margin-top: 10px;
     font-family: "Helvetica Neue";
+    color: lightgray;
+}
+
+/*div{*/
+/*    margin-top: 2px;*/
+/*}*/
+.list-group-item{
+    background-color: black;
+    color:lightgray;
+}
+.list-group-item.right-bar{
+    background-color: #282c34;
+    color:lightgray;
+}
+
+.form-control{
+    background-color: #282c34;
+    color: lightgray;
+}
+form {
+    background-color: #282c34;
+}
+.list-group-item button{
+    background-color: lightgray;
+    color: black;
+}
+
+#tweet-btn {
+    background-color: deepskyblue;
+}
+.nav-tabs{
+    border-bottom: 0;
+    border-bottom: #282c34 1px solid;
+}
+.nav-link{
+    color: lightgray;
 
 }
-div{
-    margin-top: 2px;
+#entertainment{
+    background-color: black;
+    border: 0px;
+    border-bottom: deepskyblue 6px solid;
+    /*padding: 8px;*/
 }
+
+
+.card {
+    background-color: black;
+}
+
+#main-content {
+    border: #323232 1px solid;
+    border-radius: 0 0 10px 10px;
+}
+
+#search-form {
+    border: #323232;
+}
+
+#middle-top {
+    border: #323232 1px solid;
+    border-top: 0;
+}
+
+#cog {
+    color: lightgray;
+}
+
 .wd-start{
     border: RGB(110, 118, 125) solid 1px;
     padding-bottom: 8px;
