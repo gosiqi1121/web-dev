@@ -1,0 +1,176 @@
+body {
+    background-color: black;
+    margin-left: 16px;
+    margin-top: 10px;
+    font-family: "Helvetica Neue";
+    color: lightgray;
+}
+
+/*div{*/
+/*    margin-top: 2px;*/
+/*}*/
+.list-group-item{
+    background-color: black;
+    color:lightgray;
+}
+.list-group-item.right-bar{
+    background-color: #282c34;
+    color:lightgray;
+}
+
+.form-control{
+    background-color: #282c34;
+    color: lightgray;
+}
+form {
+    background-color: #282c34;
+}
+.list-group-item button{
+    background-color: lightgray;
+    color: black;
+}
+
+#tweet-btn {
+    background-color: deepskyblue;
+}
+.nav-tabs{
+    border-bottom: 0;
+    border-bottom: #282c34 1px solid;
+}
+.nav-link{
+    color: lightgray;
+
+}
+#entertainment{
+    background-color: black;
+    border: 0px;
+    border-bottom: deepskyblue 6px solid;
+    /*padding: 8px;*/
+}
+
+
+.card {
+    background-color: black;
+}
+
+#main-content {
+    border: #323232 1px solid;
+    border-radius: 0 0 10px 10px;
+}
+
+#search-form {
+    border: #323232;
+}
+
+#middle-top {
+    border: #323232 1px solid;
+    border-top: 0;
+}
+
+#cog {
+    color: lightgray;
+}
+
+.wd-start{
+    border: RGB(110, 118, 125) solid 1px;
+    padding-bottom: 8px;
+}
+.wd-line{
+    background-color: #323232;
+    margin: 0px;
+    height: 10px;
+}
+.wd-searchBar{
+    width: 75%;
+    height: 20px;
+}
+.wd-gear{
+    margin-right: 12px;
+}
+.wd-float-left {
+    float: left;
+
+}
+.wd-float-right {
+    float: right;
+}
+.wd-float-done{
+    clear: both;
+}
+input {
+    width: 100%;
+    height: 20px;
+    background-color: #323232;
+    border-radius: 25px;
+    color: white;
+    margin-right: 12px;
+    margin-left: 20px;
+}
+.wd-first-link{
+    color: RGB(29,161,242);
+    text-decoration: none;
+}
+.wd-other-links{
+    color: RGB(110, 118, 125);
+    text-decoration: none;
+}
+.wd-links{
+    margin: 10px;
+    float: left;
+}
+.wd-for-you{
+    border-bottom:2px solid RGB(29,161,242);
+    font-size: 15px;
+    padding: 16px;
+}
+.wd-other-link-texts{
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: RGB(110, 118, 125);
+}
+
+
+.wd-title{
+    font-size: 16px;
+    color: white;
+}
+.wd-number-of-tweets{
+    font-size: 13px;
+    color: RGB(110, 118, 125);
+}
+.wd-posts{
+    border-left: RGB(110, 118, 125) solid 1px;
+    border-right: RGB(110, 118, 125) solid 1px;
+    border-bottom: RGB(110, 118, 125) solid 1px;
+    margin: 0px;
+    padding: 15px;
+}
+#first-post{
+    border-top: RGB(110, 118, 125) solid 1px;
+}
+.wd-author{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+}
+.wd-time{
+    font-size: 13px;
+    color: RGB(110, 118, 125);
+    font-weight: lighter;
+}
+/*img{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    float: right;*/
+/*    border-radius: 10px;*/
+/*    margin-right: 16px;*/
+/*    object-fit: cover;      !*    crop img*!*/
+
+/*}*/
+.wd-pic-div{
+    padding-right: 0px;
+}
