@@ -5,7 +5,7 @@ export default [
         handle : "elonmusk",
         time: "23h",
         post : "Amazing show about @Inspiration4x mission!",
-        image: "https://pbs.twimg.com/card_img/1446647628930838528/QEKvxTDO?format=jpg&name=medium",
+        image: "https://images.pexels.com/photos/23763/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         title: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         content : "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
         reply : "4.2k",
