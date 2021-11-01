@@ -1,11 +1,14 @@
 import React from "react";
 const Styles = () => {
+
     const colorBlack = {
         color: "black"
     }
     const padding10px = {
         padding: "10px"
     }
+
+    // constant JSON objects
     const bgBlue = {
         "backgroundColor": "lightblue",
         "color": "black",
@@ -19,8 +22,12 @@ const Styles = () => {
     return(
         <div>
             <h1>Styles</h1>
-            <div style={{"backgroundColor": "lightyellow",
-                "color": "black", padding: "10px"}}>
+
+            <div style={
+                {"backgroundColor": "lightyellow",
+                    "color": "black",
+                    padding: "10px"}
+            }>
                 Yellow background</div>
             <div style={bgRed}>
                 Red background</div>

@@ -1,11 +1,20 @@
-const TodoItem = (todo) => {
-    return(`
+const TodoItem = (todo
+                      = {done: true, title: 'Buy milk', status: 'COMPLETED'}) => {
+    return (
         <li>
             <input type="checkbox"
-                ${todo.done ? 'checked' : ''}
-            />
-            ${todo.title}(${todo.status})
+                   defaultChecked={todo.done}/>
+            {todo.title}({todo.status})
         </li>
-    `);
+    );
 }
 export default TodoItem;
+/*
+provide default object o we can test
+component standalone
+we don't need ` `,
+don't need $
+use defaultChecked to set initial state
+don't need $
+don't need ` `
+*/

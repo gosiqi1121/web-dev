@@ -10,7 +10,7 @@ export default [
         content : "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
         reply : "4.2k",
         retweet: "3.5k",
-        like: "37.5",
+        like: "37.5"
 
     },
     {
@@ -24,6 +24,6 @@ export default [
         content : "",
         reply : "965",
         retweet: "2.4k",
-        like: "4k",
+        like: "4k"
     },
 ];
