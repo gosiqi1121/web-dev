@@ -7,7 +7,7 @@ const HelloWorld = () => {
             <div className="container">
                 <h1>Hello World!</h1>
                 <Link to="/a6/practice">Practice</Link> |
-                <Link to="/a6/build">Build</Link>
+                <Link to="/a6/twitter/home">Build</Link>
 
             </div>
         </>

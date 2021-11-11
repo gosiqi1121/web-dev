@@ -1,0 +1,28 @@
+
+[
+  {
+    "avatarIcon": "https://cdn.vox-cdn.com/thumbor/1SrcuHFZ70PO7OPgSb2_DxM3gUk=/0x0:640x427/1820x1213/filters:focal(0x0:640x427):format(webp)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+    "userName": "Java",
+    "handle": "Java"
+  },
+  {
+    "avatarIcon": "https://yt3.ggpht.com/ytc/AKedOLQf6ky9m_48B2ElJExS53ydwnVl5XBwPfdYeOe1=s176-c-k-c0x00ffffff-no-rj",
+    "userName": "Relativity Space",
+    "handle": "relativityspace"
+  },
+  {
+    "avatarIcon": "https://www.krwg.org/sites/krwg/files/202005/virgin-orbit-light-logo.png",
+    "userName": "Virgin Galactic",
+    "handle": "virgingalactic"
+  },
+  {
+    "avatarIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",
+    "userName": "NASA",
+    "handle": "NASA"
+  },
+  {
+    "avatarIcon": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/931/524/TESLA-LOGO.jpg?ve=1&tl=1",
+    "userName": "Tesla",
+    "handle": "Tesla"
+  }
+]
