@@ -1,0 +1,33 @@
+[
+    {
+        "_id": 1,
+        "avatar": "https://pbs.twimg.com/profile_images/1442634650703237120/mXIcYtIs_400x400.jpg",
+        "userName" : "Elon Musk",
+        "handle" : "elonmusk",
+        "time": "23h",
+        "post" : "Amazing show about @Inspiration4x mission!",
+        "image": "https://images.pexels.com/photos/23763/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "title": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+        "content" : "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
+        "reply" : "123",
+        "retweet": "789",
+        "like": "211111111111111111",
+        "liked" : false
+
+    },
+    {
+        "_id": 2,
+        "avatar": "https://pbs.twimg.com/profile_images/966372680306868224/60wfGe9e_400x400.jpg",
+        "userName" : "New York Post",
+        "handle" : "nypost",
+        "time": "23h",
+        "post" : "I'm vegan, so am I exempt from a vaccine mandate?",
+        "image": "https://pbs.twimg.com/media/FB6HVlNXsAg-Erf?format=jpg&name=medium",
+        "title": "",
+        "content" : "",
+        "reply" : "965",
+        "retweet": "423",
+        "like": "861",
+        "liked": false
+    }
+]

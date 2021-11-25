@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import PostItem from '../PostItem/PostItem'
 
 const WhatsHappening = () => {
-    const tweets = useSelector(state => state.tweets)
+    const tweets = useSelector(state => state.tweetsA7)
 
     let [whatsHappening, setWhatsHappening] = useState('')
     const dispatch = useDispatch()

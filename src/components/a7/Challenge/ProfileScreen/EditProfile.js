@@ -44,6 +44,7 @@ const EditProfile = () => {
     }
 
     const saveClickHandler = () => {
+        console.log("====clicked===")
         dispatch({type: 'save', info, loca, personalURL, name, birth})
     }
     return (

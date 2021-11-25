@@ -1,6 +1,7 @@
 import information from "../profileData/information"
 
-const profile = (state = information, action) => {
+const profileA7 = (state = information, action) => {
+    console.log("==========profile_a7====",action,state)
     switch (action.type){
         case  'save':
             const newState = {
@@ -28,4 +29,4 @@ const profile = (state = information, action) => {
 
 
 }
-export default profile
+export default profileA7

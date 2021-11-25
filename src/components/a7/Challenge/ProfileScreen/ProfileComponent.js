@@ -3,12 +3,12 @@
 import { Link } from 'react-router-dom'
 // import information from '../profileData/information'
 import { useSelector } from 'react-redux'
-import profile from '../profileReducer/profile'
+import profileA7 from '../profileReducer/profileA7'
 
 
 
 const ProfileComponent = () => {
-    const information = useSelector(state => state.profile)
+    const information = useSelector(state => state.profileA7)
     return (
         <>
             <div className="row">

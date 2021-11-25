@@ -1,6 +1,6 @@
 import posts from "../data/items.json"
 
-const tweets = (state = posts, action) => {
+const tweetsA7 = (state = posts, action) => {
     switch (action.type) {
         case "create-tweet":
             const newTweet = {
@@ -48,4 +48,4 @@ const tweets = (state = posts, action) => {
 
 }
 
-export default tweets
+export default tweetsA7
