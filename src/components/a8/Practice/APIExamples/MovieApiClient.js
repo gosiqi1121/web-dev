@@ -1,4 +1,4 @@
-const movieApi = "https://some-name.herokuapp.com"
+const movieApi = "https://node-on-heroku.herokuapp.com"
 import React, {useEffect, useState} from "react";
 const MovieApiClient = () => {
     const[movies, setMovies] = useState([]);
