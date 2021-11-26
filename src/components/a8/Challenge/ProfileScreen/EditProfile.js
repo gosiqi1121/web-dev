@@ -110,28 +110,28 @@ const EditProfile = () => {
                             <label for="name">Name</label>
                             <textarea className="bg-black text-white " id="name" style={{width:"100%"}}
                                         value = {name.newName} onChange={nameChangeHandler}>
-                                {information[0].name}
+                                {information.name}
                             </textarea>
                             </div>
                         <div className="mt-2 ">
                             <label for="bio">Bio</label>
                             <textarea className="bg-black text-white" name='bio' style={{width:"100%"}}
                                       value={info.bio} onChange={bioChangeHandler}>
-                                {information[0].bio}
+                                {information.bio}
                             </textarea>
                         </div>
                         <div className="mt-2">
                             <label for="location">Location</label>
                             <textarea className="bg-black text-white"  name="location" style={{width:"100%"}}
                                         value={loca.loca} onChange={locationChangeHandler}>
-                                {information[0].location}
+                                {information.location}
                             </textarea>
                         </div>
                         <div className="mt-2">
                             <label for="website">Website</label>
                             <textarea className="bg-black text-white" name="website" style={{width:"100%"}}
                                         value={personalURL.page} onChange={websiteChangeHandler}>
-                                {information[0].website}
+                                {information.website}
                             </textarea>
                         </div>
                         <div>
@@ -142,7 +142,7 @@ const EditProfile = () => {
                             <div>
 
                                 <input id="birthday" type="date" className="bg-light text-white"
-                                       value={information[0].birthday}  onChange = {birthChangeHandler}
+                                       value={birth.birthday}  onChange = {birthChangeHandler}
 
                                 />
                             </div>

@@ -1,4 +1,5 @@
-const PROFILE_API = 'https://node-on-heroku-1124.herokuapp.com/api/profile';
+// const PROFILE_API = 'https://node-on-heroku-1124.herokuapp.com/api/profile';
+const PROFILE_API = 'http://127.0.0.1:4000/api/profile';
 
 export const fetchCurrentProfile = (dispatch) =>
     fetch(PROFILE_API)

@@ -21,7 +21,7 @@ const ProfileComponent = () => {
                 </div>
                 <div className="col-11">
                     <div style={{ fontSize: '20px' }}>
-                        {information[0].name}
+                        {information.name}
                     </div>
 
                     <div style={{color: '#282c34'}}>
@@ -49,11 +49,11 @@ const ProfileComponent = () => {
 
                     <div >
                         <span style={{ fontSize: '24px', fontWeight: "bold" }}>
-                            {information[0].name}
+                            {information.name}
                         </span>
                         <br/>
                         <span style={{color: '#282c34'}}>
-                            @{information[0].handle}
+                            @{information.handle}
                         </span>
                     </div>
 
@@ -71,29 +71,29 @@ const ProfileComponent = () => {
             </div>
             <div className="ms-2">
                 <div>
-                    {information[0].bio}
+                    {information.bio}
                 </div>
                 <div className="row" style={{color: '#282c34'}}>
                     <div className="col-3 ">
                         <i className="fas fa-map-marker-alt"></i>
-                        <span className="p-2">{information[0].location}</span>
+                        <span className="p-2">{information.location}</span>
                     </div>
                     <div className="col-3">
                         <i className="fas fa-birthday-cake"></i>
-                        <span className="p-2">Born {information[0].dateOfBirth}</span>
+                        <span className="p-2">Born {information.dateOfBirth}</span>
                     </div>
                     <div className="col-3">
                         <i className="fas fa-calendar-alt"></i>
-                        <span className="p-2">Joined {information[0].dateJoined}</span>
+                        <span className="p-2">Joined {information.dateJoined}</span>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-2">
-                        <span className="fw-bold text-white">{information[0].followingCount}</span>
+                        <span className="fw-bold text-white">{information.followingCount}</span>
                         <span style={{color: '#282c34'}} className="p-2">Following</span>
                     </div>
                     <div className="col-2">
-                        <span className="fw-bold text-white">{information[0].followersCount}</span>
+                        <span className="fw-bold text-white">{information.followersCount}</span>
                         <span style={{color: '#282c34'}} className="p-2">Followers</span>
                     </div>
                 </div>
