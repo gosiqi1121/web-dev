@@ -10,8 +10,9 @@ import { Provider } from 'react-redux'
 import { combineReducers, createStore } from 'redux'
 import tweets from './Build/reducer/tweets'
 import profileA8 from './Challenge/profileReducer/profileA8'
+import who from '../../reducers/who'
 
-const reducer = combineReducers({tweets: tweets, profileA8})
+const reducer = combineReducers({tweets: tweets, profileA8, who})
 const store = createStore(reducer);
 const A8 = () => {
     return(
