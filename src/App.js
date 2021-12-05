@@ -21,6 +21,7 @@ import EditProfile from './components/a7/Challenge/ProfileScreen/EditProfile'
 import A6 from './components/a6/A6'
 import A7 from './components/a7/A7'
 import A8 from './components/a8/A8'
+import A9 from './components/a9/A9'
 // import tweetsA7 from './components/a7/Build/reducer/tweetsA7'
 // import profileA8 from './components/a8/Challenge/profileReducer/profileA8'
 
@@ -43,6 +44,9 @@ function App() {
                     <li>
                     <Link to="/a8/practice">A8</Link> | <Link to="/a8/twitter/home">Build</Link>
                     </li>
+                    <li>
+                    <Link to="/a9/practice">A9</Link> | <Link to="/a9/twitter/home">Build</Link>
+                    </li>
 
 
                     <Route path="/a6">
@@ -55,6 +59,9 @@ function App() {
 
                     <Route path="/a8">
                         <A8/>
+                    </Route>
+                    <Route path="/a9">
+                        <A9/>
                     </Route>
                 </div>
             </BrowserRouter>

@@ -3,14 +3,14 @@
 import { Link } from 'react-router-dom'
 // import information from '../profileData/information'
 import { useDispatch, useSelector } from 'react-redux'
-import profileA8 from '../profileReducer/profileA8'
+import profileA9 from '../profileReducer/profileA9'
 import { useEffect } from 'react'
 import { fetchCurrentProfile } from '../../services/profileService'
 
 
 
 const ProfileComponent = () => {
-    const information = useSelector(state => state.profileA8)
+    const information = useSelector(state => state.profileA9)
     const dispatch = useDispatch();
     useEffect(() => fetchCurrentProfile(dispatch), [])
     return (
@@ -61,7 +61,7 @@ const ProfileComponent = () => {
                 </div>
 
                 <div className="col">
-                <Link to="/a8/twitter/edit">
+                <Link to="/a9/twitter/edit">
                     <button className="btn btn-dar rounded-pill border-dark float-end mt-2 text-white">
                         Edit Profile
                     </button>

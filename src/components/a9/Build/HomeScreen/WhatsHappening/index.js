@@ -1,29 +1,24 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import PostItem from '../PostItem/PostItem'
-import { postNewTweet, fetchAllTweets } from '../../../services/twitterService'
+import { createTweet, fetchAllTweets } from '../../../services/twitterService'
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('')
     const dispatch = useDispatch()
     const tweetClickHandler = () => {
-        // dispatch({
-        //     type: 'create-tweet',
-        //     whatsHappening
-        // })
-        console.log(1);
-        postNewTweet(dispatch, { post: whatsHappening });
+        createTweet(dispatch, { post: whatsHappening });
 
     }
 
-    const createTweetHandler = (event) => {
-        const post = event.target.value; /* get data from input field*/
-        // const newTweet = {
-        //     post: post
-        // };
-        console.log(2);
-        setWhatsHappening(post);                   /* change local state todo variable */
-    }
+    // const createTweetHandler = (event) => {
+    //     const post = event.target.value; /* get data from input field*/
+    //     // const newTweet = {
+    //     //     post: post
+    //     // };
+    //     console.log(2);
+    //     setWhatsHappening(post);                   /* change local state todo variable */
+    // }
 
 
 

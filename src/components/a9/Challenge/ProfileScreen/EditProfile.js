@@ -1,12 +1,12 @@
 import NavigationSideBar from '../../Build/NavigationSideBar'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateCurrentProfile } from '../../services/profileService'
 
 
 const EditProfile = () => {
-    const information = useSelector(state => state.profileA8)
+    const information = useSelector(state => state.profileA9)
 
     let [name, setName] = useState({newName: information.name})
     let [info, setInfo] = useState({bio: information.bio})
@@ -48,15 +48,15 @@ const EditProfile = () => {
     }
 
     const saveClickHandler = () => {
-        // dispatch({type: 'save', info, loca, personalURL, name, birth})
-
-        updateCurrentProfile(dispatch, {
+        const newOwner = {
+            _id : information._id,
             bio : info.bio,
             location: loca.loca,
             website: personalURL.web,
             name: name.newName,
             dateOfBirth: birth.birthday
-        });
+        };
+        updateCurrentProfile(dispatch, newOwner);
     }
     return (
 
@@ -69,7 +69,7 @@ const EditProfile = () => {
                     <div className="row">
                         <div className="col-1 d-flex align-items-center justify-content-center">
 
-                            <Link to="/a8/twitter/profile">
+                            <Link to="/a9/twitter/profile">
                                 <i className="fas fa-times"></i>
                             </Link>
 
@@ -81,7 +81,7 @@ const EditProfile = () => {
 
                         </div>
                         <div className="col-1">
-                            <Link to="/a8/twitter/profile">
+                            <Link to="/a9/twitter/profile">
                                 <button className="btn btn-light rounded-pill bg-white me-2 float-end"
                                 onClick={saveClickHandler}>
                                     <span className="fw-bold text-black">Save</span>
