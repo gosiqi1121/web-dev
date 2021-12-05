@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { deleteTweet, likeTweet } from '../../../services/twitterService'
+import React from 'react'
 
 const cardBody = (item) => {
     if(item.title === ''){
@@ -29,51 +30,59 @@ const PostItem = ({item}) => {
 
 
     return (
-    <li className="list-group-item" key={item._id}>
-        <div className="row">
-            <div className="col-1">
-                <img className="rounded-circle float-start" style={{width: '48px', height: '48px', position: "relative"}} src={item.avatar}/>
-            </div>
-            <div className="col-11">
-                <div>
-                    <span className="fw-bold">{item.userName}</span>
-                    <i className="fa-solid fa-badge-check"></i>
-                    <span className="text-secondary"> @{item.handle} - {item.time}</span>
+    <li className="list-group-item" key={item._id} style={{paddingLeft: 0}}>
 
 
-                    <i onClick={deleteTweetClickHandler}
-                       className="fas fa-times fa-pull-right"></i>
+        <table style={{marginBottom: '16px'}}>
+            <tbody>
+            <tr>
+                <td style={{verticalAlign: 'top'}}>
+                    <img src={item.avatar}
+                         className="rounded-circle"
+                         style={{width: '48px', margin: '16px'}}/>
+                </td>
+                <td style={{width: "100%"}}>
+                    <div>
+                        <span className="fw-bold">{item.userName}</span>
+                        <i className="fa-solid fa-badge-check"></i>
+                        <span className="text-secondary"> @{item.handle} - {item.time}</span>
 
-                </div>
-                <div>{item.post}</div>
-                <div className="card border-secondary mt-2">
-                    <img className="rounded-3 img-fluid card-img-top " src={item.image}/>
-                    {cardBody(item)}  
-                </div>
-                <div className="row mt-3">
-                    <div className="col-3">
-                        <i className="far fa-comment"></i>
-                        {item.reply}
+
+                        <i onClick={deleteTweetClickHandler}
+                           className="fas fa-times fa-pull-right"></i>
+
                     </div>
-                    <div className="col-3">
-                        <i className="fas fa-retweet "></i>
-                        {item.retweet}
+                    <div>{item.post}</div>
+                    <div className="card border-secondary mt-2">
+                        <img className="rounded-3 img-fluid card-img-top " src={item.image}/>
+                        {cardBody(item)}
                     </div>
-                    <div className="col-3" onClick={likeClickHandler}> {
-                        item.liked && <i className="far fa-heart"
-                                         style={{color: item.liked ? "red" : "white"}}></i>
-                    }{
-                        !item.liked && <i className="far fa-heart"></i>
-                    }
-                        {item.like}
+                    <div className="row mt-3">
+                        <div className="col-3">
+                            <i className="far fa-comment"></i>
+                            {item.reply}
+                        </div>
+                        <div className="col-3">
+                            <i className="fas fa-retweet "></i>
+                            {item.retweet}
+                        </div>
+                        <div className="col-3" onClick={likeClickHandler}> {
+                            item.liked && <i className="far fa-heart"
+                                             style={{color: item.liked ? "red" : "white"}}></i>
+                        }{
+                            !item.liked && <i className="far fa-heart"></i>
+                        }
+                            {item.like}
+                        </div>
+                        <div className="col-3">
+                            <i className="far fa-share-square"></i>
+
+                        </div>
                     </div>
-                    <div className="col-3">
-                        <i className="far fa-share-square"></i>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </li>
     );
 }
