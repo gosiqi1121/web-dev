@@ -15,7 +15,7 @@ const tweets = (state = initialState, action) => {
                 "handle": "NewTweetSample",
                 "time": "3h",
                 ...action.tweet,
-                "avatar" : "https://lwlies.com/wp-content/uploads/2017/04/avatar-2009.jpg",
+                "avatar" : "https://pbs.twimg.com/profile_images/378800000256050912/5e92c2bc4bcca352b73a62bc1c626e11_400x400.jpeg",
                 "image": "https://images.pexels.com/photos/1009355/pexels-photo-1009355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 "reply" : "370",
                 "retweet": "402",
